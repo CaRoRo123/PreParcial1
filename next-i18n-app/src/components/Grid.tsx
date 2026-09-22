@@ -31,7 +31,7 @@ export default function Grid({ items, lang, dict }: GridProps) {
   }, [items, search]);
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-6">
+    <section className="w-full max-w-7xl mx-auto px-4 py-6 bg-white-900 rounded-xl shadow-md">
       <SearchBar
         value={search}
         onChange={setSearch}

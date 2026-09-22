@@ -6,17 +6,17 @@ interface CardItemProps {
   lang: string;
   noImageText?: string;
 }
-
+const image = await fetch('https://dog.ceo/api/breed/${id}/images/random');
 export default function CardItem({ item, lang, noImageText = "No image" }: CardItemProps) {
   return (
     <Link
       href={`/${lang}/items/${item.id}`}
       className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
     >
-      <div className="relative aspect-square w-full bg-gray-100 dark:bg-zinc-800 overflow-hidden">
+      <div className="relative aspect-square w-full bg-white-100 dark:bg-zinc-800 overflow-hidden">
         {item.image ? (
           <img
-            src={item.image}
+            src={image}
             alt={item.title}
             className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
