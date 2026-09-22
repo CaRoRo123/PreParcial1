@@ -1,5 +1,13 @@
 {
   "welcome": "Welcome",
   "profile": "Profile",
-  "description": "This is a test application for the partial exam"
+  "description": "This is a test application for the partial exam",
+  "grid": {
+    "searchPlaceholder": "Search item...",
+    "noResults": "No items found matching your criteria",
+    "noImage": "No image"
+  },
+  "detail": {
+    "back": "← Back to list"
+  }
 }

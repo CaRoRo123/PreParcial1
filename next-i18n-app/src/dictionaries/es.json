@@ -1,5 +1,13 @@
 {
   "welcome": "Bienvenido",
   "profile": "Camilo Romero",
-  "description": "Esta es una aplicacion para parcial"
+  "description": "Esta es una aplicacion para parcial",
+  "grid": {
+    "searchPlaceholder": "Buscar elemento...",
+    "noResults": "No se encontraron elementos con ese criterio",
+    "noImage": "Sin imagen"
+  },
+  "detail": {
+    "back": "← Volver al listado"
+  }
 }
